@@ -1,0 +1,182 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Macondo&family=Radley&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <script src="https://kit.fontawesome.com/173ce674a2.js" crossorigin="anonymous"></script>    <title>Moonlit Farms</title>
+</head>
+<!-- Goal: make website semantic, accessible, and thru mobile first-design with the least amount of changes possible for larger screens; DRY! -->
+<body class="light-theme || dark-theme">
+    
+    <!-- Header with logo, background image, decorative bar at top -->
+    <header class="header-parent">
+        
+        <hr class="top-bar" id="home">
+
+        <img class="header-img" src="./img/header.jpg" alt="image of a strawberry field">
+        <img class="header-logo" src="./img/logo.png" alt="Moonlit Farms logo">
+        <hr class="top-bar top-bar2">
+        <div class="toggle">
+            <input type="checkbox" class="checkbox btn-toggle" id="checkbox"><label for="checkbox" class="label">
+                <i class="fa-solid fa-moon"></i>
+                <i class="fa-solid fa-sun"></i>
+                <div class='ball'>
+            </label>
+        </div>
+
+    </header>
+    
+    <!-- Navigation thru hamburger icon -->
+    <nav>
+        <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#aboutus">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <!-- Small info section -->
+    <div class="aboutus dark-theme || light-theme" id="aboutus">
+        <h1 class="aboutH dark-theme || light-theme">About Moonlit Farms...</h1>
+        <p class="dark-theme || light-theme">At Moonlit Farms, we know what goes into your food is important to you. That's why
+        we believe in growing our fruits and vegetables as naturally as possible. We use intuitive
+        growing techniques to foster a controlled environment for our plants to thrive.<br>
+        <br>Additionally, we have opened up our doors for visitors to come pick, play, and partake
+        on our grounds. Come visit us and see what makes our food great!<br></p>
+        </div>
+
+    <!-- Event banner -->
+    <article class="main-event" id="events">
+        <i class="fa-solid fa-star-half-stroke"></i><br>
+        Strawberry Stacks make a comeback!<br>
+        Join us April 18th for our annual Strawberry Festival! 
+    </article>
+
+    <!-- Section with upcoming events, at least 5  -->
+    <section class="events">
+        <article class="event1 event">
+            <img class="event-img" src="./img/strawbebe.jpg" alt="image of strawberries">
+            <p class="info-head">Strawberry Stacks</p>
+            <br><p class="info">Pick as many as you can fit onto your stack in our annual Strawberry Stacks event!</p>
+        </article>
+
+        <article class="event2 event">
+            <img class="event-img" src="./img/green.jpg" alt="image of cabbage">
+            <p class="info-head">Grab Your Greens</p>
+            <br><p class="info">See all of our beautiful greens thrive! Browse our kale, cabbage, and lettuce varieties.</p>
+        </article>
+
+        <div class="break"></div> <!-- break to a new row -->
+
+        <article class="event3 event">
+            <img class="event-img" src="./img/apple.jpg" alt="image of apple tree">
+            <p class="info-head">Ample Apples</p>
+            <br><p class="info">Enjoy a taste of our award-winning cider and apple pies. Stroll along our orchard and pick your favorite apples!</p>
+        </article>
+
+        <article class="event4 event">
+            <img class="event-img" src="./img/corn.jpg" alt="image of woman in corn maze">
+            <p class="info-head">Corn Crackles</p>
+            <br><p class="info">Get lost in our corn maze and try all of our favorite fair treats.</p>
+        </article>
+
+        <article class="event5 event">
+            <img class="event-img" src="./img/potato.jpg" alt="image of purple sweet potatoes">
+            <p class="info-head">Tater Tots Track</p>
+            <br><p class="info">Take a ride on our Tater Tot Train and enjoy our latest potato snacks!</p>
+        </article>
+
+    </section>
+
+    <!-- Gallery -->
+    <h2 id="gallery" class="gallery-title">Our Gallery</h2>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img/gallery1.jpg" style="width:75%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="img/gallery2.jpg" style="width:75%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="img/gallery3.jpg" style="width:75%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="img/gallery4.jpg" style="width:75%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img/gallery5.jpg" style="width:75%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img/gallery6.jpg" style="width:75%">
+  </div>
+    
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+        <img class="demo cursor" src="img/gallery1.jpg"  style="width:100%" onclick="currentSlide(1)" alt="Basket of apples">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/gallery2.jpg" style="width:100%"  onclick="currentSlide(2)" alt="Sweet potato fries">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/gallery3.jpg"  style="width:100%" onclick="currentSlide(3)" alt="Hands holding an ear of corn">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/gallery4.jpg"  style="width:100%" onclick="currentSlide(4)" alt="Aerial shot of harvester collecting corn">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/gallery5.jpg"  style="width:100%" onclick="currentSlide(5)" alt="Spinach plants">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="img/gallery6.jpg"  style="width:100%" onclick="currentSlide(6)" alt="Strawberry plants">
+      </div>       
+  </div>
+</div>
+
+
+    <!-- Footer with address/info -->
+    <footer>
+        <address>
+            <p>1415 Stardrop Street ● 
+            Pelican Town, NC 27410 ●
+            (555) 555-4357</p>
+        </address>
+
+    </footer>
+
+    <script src="/js/app.js"></script>
+
+
+</body>
+</html>
