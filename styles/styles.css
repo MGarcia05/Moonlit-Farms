@@ -13,6 +13,17 @@
 /* ============================================= */
 /*                  Dark Mode                    */
 /* ============================================= */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 body.dark-theme div, body.dark-theme hr, body.dark-theme .events, body.dark-theme #hamburger-icon {
   background: #0f1328;
   color: #f6e4f6;
